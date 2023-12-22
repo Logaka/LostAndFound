@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HistoryController"><children>
+      <AnchorPane layoutX="163.0" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #092635;">
+         <children>
+            <ScrollPane layoutX="13.0" layoutY="16.0" prefHeight="471.0" prefWidth="622.0">
+               <content>
+                  <GridPane fx:id="postSetter">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Text fx:id="nameText" fill="#092635" layoutX="-2.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" wrappingWidth="165.2000122070312">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="31.0" layoutY="223.0" mnemonicParsing="false" onAction="#loadMainPage" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #092635; -fx-background-radius: 10;" text="Back" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+      </Button>
+      <Line endX="141.3999786376953" layoutY="183.0" startX="16.599987030029297" stroke="#092635" strokeWidth="3.0" />
+      <Text fx:id="lastNameText" fill="#092635" layoutX="-2.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" wrappingWidth="165.2000122070312">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" layoutX="31.0" layoutY="11.0" prefHeight="110.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="icon" fitHeight="110.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

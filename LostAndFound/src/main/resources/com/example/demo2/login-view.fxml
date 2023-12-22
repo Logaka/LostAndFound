@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.LoginConstructor">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #092635;">
+            <children>
+                <Label id="lostLabel" layoutX="94.0" layoutY="182.0" text="lost&amp;found" textFill="WHITE">
+                    <font>
+                        <Font name="Bookman Old Style" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="350.0" prefHeight="400.0" prefWidth="350.0">
+            <children>
+                <Text fill="#092635" layoutX="89.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+                    <font>
+                        <Font name="Bookman Old Style" size="40.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="userText" layoutX="51.0" layoutY="186.0" prefHeight="25.0" prefWidth="273.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #1B4242; -fx-border-width: 0 0 1 0;" />
+                <PasswordField fx:id="passText" layoutX="51.0" layoutY="257.0" prefHeight="25.0" prefWidth="273.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #1B4242; -fx-border-width: 0 0 1 0;" />
+                <Hyperlink fx:id="SigninLink" layoutX="139.0" layoutY="364.0" text="New user?" textFill="#1b4242" />
+                <Button fx:id="login" layoutX="145.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #092635;" text="Login" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

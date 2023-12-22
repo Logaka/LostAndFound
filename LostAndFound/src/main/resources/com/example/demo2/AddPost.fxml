@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.AddPostController">
+   <children>
+      <AnchorPane layoutX="163.0" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: #092635;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="62.0" layoutY="11.0" prefHeight="481.0" prefWidth="528.0" spacing="15.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="New Post">
+                     <font>
+                        <Font name="Bookman Old Style" size="48.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane prefHeight="158.0" prefWidth="528.0">
+                     <children>
+                        <ImageView fx:id="imageIcon" fitHeight="150.0" fitWidth="200.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Изображения/SavedPictures/imageChoose.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="openFileButton" layoutX="488.0" layoutY="14.0" mnemonicParsing="false" onAction="#fileHandle" prefHeight="26.0" prefWidth="38.0" text="..." />
+                        <TextField fx:id="pathArea" layoutX="178.0" layoutY="14.0" prefHeight="26.0" prefWidth="310.0" promptText="set path" />
+                        <ComboBox fx:id="choiceBox" layoutX="178.0" layoutY="65.0" prefHeight="26.0" prefWidth="145.0" promptText="Set Status" />
+                     </children>
+                  </AnchorPane>
+                  <HBox prefHeight="0.0" prefWidth="528.0" />
+                  <TextArea fx:id="commentArea" prefHeight="200.0" prefWidth="200.0" promptText="set cooment" wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Button fx:id="acceptButton" layoutX="31.0" layoutY="223.0" mnemonicParsing="false" onAction="#acceptPost" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #092635; -fx-background-radius: 10;" text="Accept" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+      </Button>
+      <Line endX="141.3999786376953" layoutY="183.0" startX="16.599987030029297" stroke="#092635" strokeWidth="3.0" />
+      <Button fx:id="backButton" layoutX="32.0" layoutY="277.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #092635; -fx-background-radius: 10;" text="Back" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="13.0" />
+         </font>
+      </Button>
+      <Text fx:id="nameText" fill="#092635" layoutX="-2.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuanyshbek" textAlignment="CENTER" wrappingWidth="165.2000122070312">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="lastName" fill="#092635" layoutX="-4.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kuanyshbek" textAlignment="CENTER" wrappingWidth="165.2000122070312">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Text>
+      <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="15.0" prefHeight="103.0" prefWidth="98.0">
+         <children>
+            <ImageView fx:id="iconUser" fitHeight="103.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
